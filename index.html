@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Custom Items — 130 custom Minecraft items, legendary abilities, and cinematic server moments."
+    />
+    <meta name="theme-color" content="#110606" />
+    <title>Custom Items — The Crimson Cut</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-loader" aria-hidden="true">
+      <span>THE RIFT IS OPEN</span><i></i>
+    </div>
+    <div class="page-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <audio id="site-audio" preload="metadata" loop>
+      <source src="assets/ambient-edit.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Custom Items home">
+        <span>CUSTOM</span><strong>ITEMS</strong><i>CRIMSON CUT</i>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#rift">The Rift</a>
+        <a href="#moments">Moments</a>
+        <a href="#arsenal">Arsenal</a>
+        <a href="#commands">Commands</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="sound-button"
+          type="button"
+          data-sound
+          aria-pressed="false"
+          aria-label="Play background music"
+        >
+          <span class="sound-bars" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i
+          ></span>
+          <b data-sound-label>Sound off</b>
+        </button>
+        <a
+          class="button button--red button--compact"
+          href="https://modrinth.com/plugin/custom-items-"
+          target="_blank"
+          rel="noreferrer"
+          ><span>Get plugin</span><i aria-hidden="true">↗</i></a
+        >
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-panel"
+        >
+          <span class="sr-only">Open menu</span><i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <aside class="menu-panel" id="menu-panel" aria-hidden="true" inert>
+      <nav aria-label="Mobile navigation">
+        <a href="#rift"><span>01</span> The Rift</a>
+        <a href="#moments"><span>02</span> Moments</a>
+        <a href="#arsenal"><span>03</span> Arsenal</a>
+        <a href="#commands"><span>04</span> Commands</a>
+      </nav>
+      <p>130 custom items, tuned for Paper 1.21+.</p>
+    </aside>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-media" data-parallax="0.04">
+          <img
+            src="assets/crimson-end-hero.png"
+            alt="Players fighting in a crimson Minecraft End arena"
+          />
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <svg
+          class="hero-contours"
+          viewBox="0 0 1600 960"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M-100 167C158-46 388 284 674 77s498 163 747-34 370 121 238 357"
+          />
+          <path
+            d="M-132 350C155 111 382 501 668 269s476 210 738-28 380 98 267 366"
+          />
+          <path
+            d="M-100 662C150 431 360 829 681 568s483 153 728-54 418 132 247 424"
+          />
+        </svg>
+
+        <div class="hero-content">
+          <p class="eyebrow reveal">
+            <span></span>SEASON 01 · 130 CUSTOM ITEMS
+          </p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-title__small reveal">LEGENDS DON'T</span>
+            <span class="hero-title__big reveal">PLAY SAFE.</span>
+          </h1>
+          <div class="hero-meta reveal">
+            <p>
+              Every relic has a tell. Every ability leaves a scar. Every server
+              gets a new story.
+            </p>
+            <a class="button button--red button--large magnetic" href="#rift"
+              ><span>Enter the rift</span><i>↓</i></a
+            >
+          </div>
+        </div>
+
+        <div class="hero-stamp reveal">
+          <span>DROP INTO</span><strong>CHAOS</strong><i>✦</i>
+        </div>
+        <div class="hero-coordinate" aria-hidden="true">
+          RIFT // 23.81 · 80.02
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>RIGHT CLICK / LOW POWER</span><b>✦</b><span>F / MID POWER</span
+          ><b>✦</b><span>SHIFT + F / HIGH POWER</span><b>✦</b>
+          <span>RIGHT CLICK / LOW POWER</span><b>✦</b><span>F / MID POWER</span
+          ><b>✦</b><span>SHIFT + F / HIGH POWER</span><b>✦</b>
+        </div>
+      </div>
+
+      <section
+        class="manifesto section-pad"
+        id="rift"
+        aria-labelledby="rift-title"
+      >
+        <p class="section-index reveal">[ 001 / THE RIFT ]</p>
+        <h2 id="rift-title" class="manifesto-copy reveal">
+          Not a plugin that <em>adds items.</em> A plugin that changes what a
+          Minecraft moment can feel like.
+        </h2>
+        <div class="manifesto-foot reveal">
+          <p>
+            Twenty battle-ready legendaries, a full custom-item collection, and
+            ability levels built around the kind of chaos players clip and
+            remember.
+          </p>
+          <div class="stat-strip">
+            <span><b>130</b> custom items</span
+            ><span><b>20</b> legendaries</span
+            ><span><b>03</b> power tiers</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="rift-run"
+        id="moments"
+        aria-labelledby="rift-run-title"
+        data-roll
+      >
+        <div class="rift-run__sticky">
+          <div class="rift-run__media">
+            <img
+              class="roll-image roll-image--one"
+              src="assets/lava-scar.png"
+              alt="A bright magma-like scar cutting through Minecraft terrain"
+            />
+            <img
+              class="roll-image roll-image--two"
+              src="assets/void-scar.png"
+              alt="Purple void energy glowing across Minecraft terrain"
+            />
+            <img
+              class="roll-image roll-image--three"
+              src="assets/end-slam.png"
+              alt="Custom item impact in a Minecraft End arena"
+            />
+          </div>
+          <div class="rift-run__shade" aria-hidden="true"></div>
+          <div class="rift-run__content section-pad">
+            <p class="section-index">[ 002 / ROLL THE SCREEN ]</p>
+            <h2 id="rift-run-title">
+              SCROLL<br /><em>THROUGH THE</em><br />AFTERMATH.
+            </h2>
+            <p class="rift-run__copy">
+              Your scroll drives the sequence: breach the ground, charge the
+              void, finish the fight.
+            </p>
+            <div class="rift-run__steps" aria-hidden="true">
+              <span class="is-active">01 / SCAR</span><span>02 / RIFT</span
+              ><span>03 / IMPACT</span>
+            </div>
+          </div>
+          <div class="rift-run__meter" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <section
+        class="ability-archive section-pad"
+        aria-labelledby="archive-title"
+      >
+        <div class="archive-intro">
+          <p class="section-index reveal">[ 003 / ABILITY ARCHIVE ]</p>
+          <h2 id="archive-title" class="display-heading reveal">
+            PICK YOUR<br /><em>DISASTER.</em>
+          </h2>
+          <p class="archive-note reveal">
+            Hover the cards. Every visual tells you what kind of trouble it
+            starts.
+          </p>
+        </div>
+        <div class="archive-grid">
+          <article class="archive-card archive-card--wide reveal" data-tilt>
+            <img
+              src="assets/sunset-orbit.png"
+              alt="A player beneath floating blocks in a Minecraft sunset"
+            />
+            <div class="archive-card__overlay"></div>
+            <div class="archive-card__copy">
+              <span>FAULT MINER / HIGH POWER</span>
+              <h3>Continental<br />Break</h3>
+              <p>
+                Reshape the battlefield until standing still is no longer an
+                option.
+              </p>
+            </div>
+            <b class="card-number">01</b>
+          </article>
+          <article class="archive-card reveal" data-tilt>
+            <img
+              src="assets/void-lift.png"
+              alt="Bright void energy flowing through Minecraft terrain"
+            />
+            <div class="archive-card__overlay"></div>
+            <div class="archive-card__copy">
+              <span>ECHOING PICK / MID POWER</span>
+              <h3>Cave<br />Choir</h3>
+              <p>Make the whole ground feel awake.</p>
+            </div>
+            <b class="card-number">02</b>
+          </article>
+          <article class="archive-card archive-card--red reveal" data-tilt>
+            <img
+              src="assets/iron-escape.png"
+              alt="A player caught in a bright impact inside a dark Minecraft structure"
+            />
+            <div class="archive-card__overlay"></div>
+            <div class="archive-card__copy">
+              <span>CRYSTAL PROSPECTOR / MID POWER</span>
+              <h3>Crystal<br />Excavation</h3>
+              <p>Cut a glowing line through the impossible.</p>
+            </div>
+            <b class="card-number">03</b>
+          </article>
+        </div>
+      </section>
+
+      <section class="signal-room" aria-labelledby="signal-title">
+        <div class="signal-room__visual">
+          <img
+            src="assets/end-approach.png"
+            alt="Players converging on a glowing action in the Minecraft End"
+          />
+        </div>
+        <div class="signal-room__copy section-pad">
+          <p class="section-index reveal">[ 004 / COMBAT SIGNAL ]</p>
+          <h2 id="signal-title" class="reveal">
+            POWER SHOULD BE<br /><em>READABLE.</em>
+          </h2>
+          <p class="reveal">
+            The best abilities announce themselves before they land. Color,
+            particles, and motion give everyone one second to decide: counter
+            it, run from it, or send something worse back.
+          </p>
+          <div class="signal-tags reveal">
+            <span>VISUAL TELLS</span><span>CLEAN CONTROLS</span
+            ><span>ESCALATING OUTPUT</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="arsenal section-pad"
+        id="arsenal"
+        aria-labelledby="arsenal-title"
+      >
+        <div class="arsenal-head">
+          <div>
+            <p class="section-index reveal">[ 005 / THE ARSENAL ]</p>
+            <h2 id="arsenal-title" class="display-heading reveal">
+              YOUR NEXT<br />MAIN CHARACTER.
+            </h2>
+          </div>
+          <p class="archive-note reveal">
+            A first look at four of the tools that make ordinary worlds feel
+            dangerously temporary.
+          </p>
+        </div>
+        <div class="item-grid">
+          <article class="item-card reveal" data-tilt>
+            <img src="assets/lava-scar.png" alt="Magma scar ability effect" />
+            <div>
+              <span>001 / NETHERITE PICKAXE</span>
+              <h3>Fault Miner</h3>
+              <p>Seismic Bore · Ore Magnet · Continental Break</p>
+            </div>
+          </article>
+          <article class="item-card reveal" data-tilt>
+            <img src="assets/void-scar.png" alt="Void energy ability effect" />
+            <div>
+              <span>002 / NETHERITE PICKAXE</span>
+              <h3>Echoing Pick</h3>
+              <p>Resonance Mine · Cave Choir</p>
+            </div>
+          </article>
+          <article class="item-card reveal" data-tilt>
+            <img
+              src="assets/end-slam.png"
+              alt="Crystal ability effect in the End"
+            />
+            <div>
+              <span>003 / DIAMOND PICKAXE</span>
+              <h3>Crystal Prospector</h3>
+              <p>Gem Ping · Crystal Excavation</p>
+            </div>
+          </article>
+          <article class="item-card item-card--type reveal" data-tilt>
+            <span>004 / IRON PICKAXE</span><strong>COPPER<br />DELVER</strong>
+            <p>Tunnel Spark</p>
+            <i>130<br />ITEMS</i>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="commands section-pad"
+        id="commands"
+        aria-labelledby="commands-title"
+      >
+        <div class="commands-intro">
+          <p class="section-index reveal">[ 006 / COMMAND DECK ]</p>
+          <h2 id="commands-title" class="display-heading reveal">
+            CONTROL<br />THE DROP.
+          </h2>
+        </div>
+        <div class="command-list reveal">
+          <button class="command" type="button" data-copy="/legendaries">
+            <span>01</span><code>/legendaries</code><i>Copy</i>
+          </button>
+          <button
+            class="command"
+            type="button"
+            data-copy="/leggive &lt;item&gt; [player]"
+          >
+            <span>02</span><code>/leggive &lt;item&gt; [player]</code
+            ><i>Copy</i>
+          </button>
+          <button class="command" type="button" data-copy="/leggive all">
+            <span>03</span><code>/leggive all</code><i>Copy</i>
+          </button>
+          <button
+            class="command"
+            type="button"
+            data-copy="/legscatter [radius]"
+          >
+            <span>04</span><code>/legscatter [radius]</code><i>Copy</i>
+          </button>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-title">
+        <img
+          src="assets/sunset-launch.png"
+          alt="A player launched through the sky by a custom Minecraft ability"
+        />
+        <div class="final-cta__shade" aria-hidden="true"></div>
+        <div class="final-cta__content section-pad">
+          <p class="section-index reveal">[ READY WHEN YOU ARE ]</p>
+          <h2 id="final-title" class="reveal">
+            MAKE THEM<br /><em>REMEMBER IT.</em>
+          </h2>
+          <a
+            class="button button--red button--large magnetic reveal"
+            href="https://modrinth.com/plugin/custom-items-"
+            target="_blank"
+            rel="noreferrer"
+            ><span>Open on Modrinth</span><i>↗</i></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-pad">
+      <div class="footer-mark"><span>CUSTOM</span><strong>ITEMS</strong></div>
+      <p>Paper 1.21+ · 130 custom items · Created by AspectFire</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+    <div class="toast" role="status" aria-live="polite">Copied</div>
+  </body>
+</html>
